@@ -1,0 +1,64 @@
+name: aiweather
+description: "A new Flutter project."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  #Customize Flutter's default white native splash screen with background color and splash image. Supports dark mode, full screen, and more
+  flutter_native_splash: ^2.4.4
+  #A flutter plugin for adapting screen and font size.Guaranteed to look good on different models
+  flutter_screenutil: ^5.9.3
+  #Flutter plugin for reading and writing simple key-value pairs. Wraps NSUserDefaults on iOS and SharedPreferences on Android
+  shared_preferences:
+  #Functional Programming in Dart. Purify your Dart code using efficient immutable data structures, monads, lenses and other FP tools
+  dartz: ^0.10.1
+  #A Dart package that helps to implement value based equality without needing to explicitly override == and hashCode
+  equatable: ^2.0.7
+  #Flutter plugin for Firebase Core, enabling connecting to multiple Firebase apps
+  firebase_core: ^3.11.0
+  #Flutter plugin for Firebase Auth, enabling authentication using passwords, phone numbers and identity providers like Google, Facebook and Twitter
+  firebase_auth: ^5.4.2
+  #Flutter plugin for Cloud Firestore, a cloud-hosted, noSQL database with live synchronization and offline support on Android and iOS
+  cloud_firestore: ^5.6.3
+  #A Flutter package to check your internet connection with subsecond response times, even on mobile networks!
+  internet_connection_checker_plus: ^2.7.0
+  #Flutter Widgets that make it easy to implement the BLoC (Business Logic Component) design pattern. Built to be used with the bloc state management package
+  flutter_bloc: ^9.0.0
+  #Simple direct Service Locator that allows to decouple the interface from a concrete implementation and to access the concrete implementation from everywhere in your App
+  get_it: ^8.0.3
+  #A collection of loading indicators animated with flutter.
+  flutter_spinkit: ^5.2.1
+  #Contains code to deal with internationalized/localized messages, date and number formatting and parsing, bi-directional text, and other internationalization issues.
+  intl: ^0.20.2
+  #Beautiful animations inspired by Animate.css, providing customizable widget-based animations with no external dependencies
+  animate_do:
+  #A powerful HTTP networking package, supports Interceptors, Aborting and canceling a request, Custom adapters, Transformers, etc
+  dio: ^5.8.0+1
+  #Geolocation plugin for Flutter. This plugin provides a cross-platform (iOS, Android) API for generic location (GPS etc.) functions.
+  geolocator: ^13.0.2
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+
+  fonts:
+    - family: "Kanit"
+      fonts:
+        - asset: assets/fonts/Kanit-Regular.ttf
+
